@@ -8,7 +8,7 @@
 - [ ] Repeat for other schools
 
 ### 2. Setup a Web Server
-- [ ] Write flask boiler plate
+- [x] Write flask boiler plate
 - [ ] Implement a page that sorts athletes by sport, gender, hometown, etc.
 - [ ] Clicking on an athlete will expand them with a modal ui, showing all their data like the original website
 

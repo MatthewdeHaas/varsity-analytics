@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom scripts -->
+  <script src="../static/scripts/ui.js"></script>
+
+</head>
+
+<html class="font-light h-full select-none">
+
+  <body class="h-full" hx-boost="true">
+
+    {% block body %}
+    {% endblock %}
+
+  </body>
+
+</html>
