@@ -1,0 +1,29 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE athlete (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  athlete_key INTEGER NOT NULL,
+  name TEXT NOT NULL,
+  gender TEXT NOT NULL CHECK (gender IN ('M', 'F')),
+  sport_id INTEGER NOT NULL,
+  school_id INTEGER NOT NULL,
+  FOREIGN KEY (sport_id) REFERENCES sport(id),
+  FOREIGN KEY (school_id) REFERENCES school(id)
+) STRICT;
+
+CREATE TABLE image (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  url TEXT NOT NULL,
+  athlete_id INTEGER NOT NULL,
+  FOREIGN KEY (athlete_id) REFERENCES athlete(id)
+) STRICT;
+
+CREATE TABLE sport (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL
+) STRICT;
+
+CREATE TABLE school (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL
+) STRICT;

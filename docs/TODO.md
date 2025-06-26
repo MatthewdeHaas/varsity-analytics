@@ -6,9 +6,11 @@
   - [x] Historical images
   - [x] Available personal data
 - [ ] Repeat for other schools
-
-### 2. Setup a Web Server
+### 2. Setup the Web Server
 - [x] Write flask boiler plate
+  - [x] Front/back end
+  - [x] Database
+- [ ] Write a schema
 - [ ] Implement a page that sorts athletes by sport, gender, hometown, etc.
 - [ ] Clicking on an athlete will expand them with a modal ui, showing all their data like the original website
 
