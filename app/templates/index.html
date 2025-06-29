@@ -9,10 +9,9 @@
       Choose a school
     <p>
 
-
     <div class="grid grid-cols-4 gap-4">
       {% for school in schools %}
-        <a 
+        <a
           class="p-2 border-2 bg-neutral-300 border-neutral-500 rounded-md"
           href="{{ url_for('home.school', school=school.name) }}"
           >

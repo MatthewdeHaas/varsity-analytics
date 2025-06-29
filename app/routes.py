@@ -86,7 +86,6 @@ def update_database():
             VALUES(?)
         """, (name, ))
 
-        # TODO: fix unique entry issue
         for sport, athletes in school_data.items():
             cur.execute("""
                 INSERT OR IGNORE INTO sport (name)
